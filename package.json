@@ -14,6 +14,8 @@
     "http-errors": "~1.6.2",
     "mongoose": "^5.4.22",
     "morgan": "~1.9.0",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "request": "^2.88.0",
+    "require": "^2.4.20"
   }
 }
