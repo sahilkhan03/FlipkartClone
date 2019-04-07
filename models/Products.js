@@ -9,6 +9,8 @@ let productSchema = new mongoose.Schema({
     features : {type: String, required: true},
     description : {type: String, required: true},
     ratings: {type: Number, default: 0},
+    brand: {type: String, required:true},
+    category: {type: String, required: true},
     comments: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Comments"
