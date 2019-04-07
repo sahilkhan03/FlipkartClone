@@ -7,7 +7,7 @@ let express = require('express'),
     app  =  express();
 
 app.set('view engine','ejs');
-app.use(express.static('public'));
+app.use(express.static('./'));
 app.use(bodyParser.urlencoded({extended : true}));
 
 //Require all routes here
@@ -16,7 +16,7 @@ let ProductsAPI = require('./routes/api/productsAPI');
 
 //Use all routes here
 app.use(routes);
-app.use
+app.use(ProductsAPI);
 
 
 //Listening on port 3000

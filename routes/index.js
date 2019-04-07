@@ -5,7 +5,7 @@ let express = require('express'),
 
 
 router.get('/' , (req,res) => {
-   res.send("Index Page");
+   res.render('index');
 });
 
 
