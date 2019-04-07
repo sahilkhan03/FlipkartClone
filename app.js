@@ -12,8 +12,12 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 //Require all routes here
 let routes = require('./routes');
+let ProductsAPI = require('./routes/api/productsAPI');
 
+//Use all routes here
 app.use(routes);
+app.use
+
 
 //Listening on port 3000
 app.listen(3000, () => {
