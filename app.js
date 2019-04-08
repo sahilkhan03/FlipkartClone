@@ -2,9 +2,12 @@
 
 let express = require('express'),
     bodyParser = require('body-parser'),
+    mongoose = require('mongoose'),
     path = require('path'),
     http = require('http'),
     app  =  express();
+
+mongoose.connect('mongodb://localhost/easeMyCart' , {useNewUrlParser: true});
 
 app.set('view engine','ejs');
 app.use(express.static('./'));
