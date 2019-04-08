@@ -7,7 +7,7 @@ let express = require('express'),
 
 
 router.get('/api/products/' , (req,res) => {
-    Products.find().exec()
+    Products.find().populate('comments').exec()
         .then( (products) => {
            res.json(products).status(200);
         }).catch( (error) => {
