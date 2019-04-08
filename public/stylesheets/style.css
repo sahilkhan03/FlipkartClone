@@ -1,3 +1,7 @@
 h1  {
     background: aquamarine;
 }
+
+*{
+     box-sizing: border-box;
+}
