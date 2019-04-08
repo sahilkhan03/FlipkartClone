@@ -1,29 +1,70 @@
-.input.is-rounded{
+*{
+    box-sizing: border-box;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ff9933;
+  overflow: hidden;
+    max-height: 53px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.navigbar{
-    
-    position: absolute;
-    right: 100px;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#f4fc95;
+  color:#dc143c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* Set the login , cart and about links to the extreme right of nav bar */
+#rt{
     display: flex;
+    position: absolute;
+    right: 20px;
 }
 
-#company-logo{
-
-    left:100px;
+                    /* Search bar */
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+    background-color:#ffff82;
+  border-color: #fffaf0;
+    border-radius: 2rem;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
 
-.logo{
-    margin-left:250px;
-}
-.search-input{
-    margin-left: 50px;
-    margin-right: 50px;
+            /* focus when selected */
+.topnav input[type=text]:focus{
+        outline: none;
+    border: 3px solid gray;
+    background-color: #f0ffff;
+    color:#dc143c;
 }
 
-.category{
-
+/* logo */
+#logo{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: auto;
+    margin-top: auto;
     
 }
