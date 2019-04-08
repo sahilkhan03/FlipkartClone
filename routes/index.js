@@ -6,13 +6,10 @@ let express = require('express'),
 
 
 router.get('/' , (req,res) => {
-   res.render('index');
-});
 
-router.get('/api' , (req,res) => {
     rp('http://localhost:3000/api/products/')
         .then((products) => {
-            res.send(products);
+            res.render('index' , {products: products});
         }).catch( (error) => {
         console.log(error);
     });
