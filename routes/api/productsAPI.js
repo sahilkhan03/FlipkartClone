@@ -9,8 +9,7 @@ let express = require('express'),
 router.get('/api/products/' , (req,res) => {
     Products.find().exec()
         .then( (products) => {
-            res.json('hell');
-           // res.json(products).status(200);
+           res.json(products).status(200);
         }).catch( (error) => {
             res.json('Failed').status(400);
     });
