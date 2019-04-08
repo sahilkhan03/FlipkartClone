@@ -1,6 +1,29 @@
-.input-is-rounded{
+.input.is-rounded{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navigbar{
     
-    align-content: center;
-    width: auto;
+    position: absolute;
+    right: 100px;
+    display: flex;
+}
+
+#company-logo{
+
+    left:100px;
+}
+
+.logo{
+    margin-left:250px;
+}
+.search-input{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.category{
+
     
 }
