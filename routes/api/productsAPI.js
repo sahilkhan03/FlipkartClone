@@ -28,5 +28,18 @@ router.post('/api/products' , (req,res) => {
 
 });
 
+//Show details of specific product
+router.get('/api/products/:id' , (req,res) => {
+
+    Products.findById( req.params.id ).populate('comments').exec()
+        .then( (product) => {
+            res.json(product);
+        })
+        .catch( (error) => {
+            console.log(error);
+        });
+
+});
+
 
 module.exports = router;
