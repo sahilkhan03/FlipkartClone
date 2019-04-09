@@ -9,14 +9,13 @@
   overflow: hidden;
     max-height: 53px;
     margin-top: 0px;
-
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: turquoise;
   text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -61,35 +60,23 @@
 .topnav input[type=text]:focus{
         outline: none;
     border: 3px solid gray;
-    background-color: turquoise;
-    color:steelblue;
+    background-color: #f0ffff;
+    color: blue;
 }
 
-/* logo link */
-#alogo{
+/* logo */
+#logo{
     margin-left: 200px;
     margin-bottom: auto;
-    margin-top: 0px;    
-}
-
-/* image of logo */
-#logo{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-bottom: 2px;
-    border-radius: 0.5rem;
-    height: 40px;
-    width: 50px;
-    vertical-align: middle;
+    margin-top: 0px;;
+    
 }
 
 /* style the project name */
-#project-name{
+#project{
     margin-right: 100px;
     font-family:inherit;
-    font-style: oblique;
     text-shadow: 4px 4px 4px #aaa;
     font-size: 20px;
-    text-align: center;
     
 }
