@@ -65,19 +65,31 @@
     color:steelblue;
 }
 
-/* logo */
-#logo{
+/* logo link */
+#alogo{
     margin-left: 200px;
     margin-bottom: auto;
-    margin-top: 0px;;
-    
+    margin-top: 0px;    
+}
+
+/* image of logo */
+#logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 2px;
+    border-radius: 0.5rem;
+    height: 40px;
+    width: 50px;
+    vertical-align: middle;
 }
 
 /* style the project name */
-#project{
+#project-name{
     margin-right: 100px;
     font-family:inherit;
+    font-style: oblique;
     text-shadow: 4px 4px 4px #aaa;
     font-size: 20px;
+    text-align: center;
     
 }

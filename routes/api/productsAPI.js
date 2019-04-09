@@ -6,37 +6,41 @@ let express = require('express'),
     router = express.Router();
 
 //Get all Products
-router.get('/api/products/' , (req,res) => {
+router.get('/api/products/' , (req,res,next) => {
     Products.find().populate('comments').exec()
         .then( (products) => {
-           res.json(products).status(200);
+           res.status(200).json(products);
         }).catch( (error) => {
-            res.json('Failed').status(400);
+            console.log(error);
+            next(error);
     });
 });
 
 //Add new product to database
-router.post('/api/products' , (req,res) => {
+router.post('/api/products' , (req,res,next) => {
 
     Products.create( req.body.blog )
         .then( (product) => {
             console.log(product);
+            res.status(200).redirect('http://localhost:3000/products');
         })
         .catch( (error) => {
            console.log(error);
+           next(error);
         });
 
 });
 
 //Show details of specific product
-router.get('/api/products/:id' , (req,res) => {
+router.get('/api/products/:id' , (req,res,next) => {
 
     Products.findById( req.params.id ).populate('comments').exec()
         .then( (product) => {
-            res.json(product);
+            res.status(200).json(product);
         })
         .catch( (error) => {
             console.log(error);
+            next(error);
         });
 
 });
