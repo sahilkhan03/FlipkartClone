@@ -5,7 +5,7 @@ let express = require('express'),
     Comments = require('../../models/Comments'),
     router = express.Router();
 
-
+//Get all Products
 router.get('/api/products/' , (req,res) => {
     Products.find().populate('comments').exec()
         .then( (products) => {
@@ -14,6 +14,8 @@ router.get('/api/products/' , (req,res) => {
             res.json('Failed').status(400);
     });
 });
+
+
 
 
 module.exports = router;
