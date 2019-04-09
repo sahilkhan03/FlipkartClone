@@ -15,7 +15,18 @@ router.get('/api/products/' , (req,res) => {
     });
 });
 
+//Add new product to database
+router.post('/api/products' , (req,res) => {
 
+    Products.create( req.body.blog )
+        .then( (product) => {
+            console.log(product);
+        })
+        .catch( (error) => {
+           console.log(error);
+        });
+
+});
 
 
 module.exports = router;
