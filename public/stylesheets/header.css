@@ -8,6 +8,7 @@
   background-color: #ff9933;
   overflow: hidden;
     max-height: 53px;
+    margin-top: 0px;
 }
 
 /* Style the links inside the navigation bar */
@@ -27,6 +28,7 @@
 .topnav a:hover {
   background-color:#f4fc95;
   color:#dc143c;
+    text-decoration: none;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -48,7 +50,9 @@
   border-color: #fffaf0;
     border-radius: 2rem;
   margin-top: 8px;
-  margin-right: 16px;
+ 
+    margin-left: 25px;
+    
   font-size: 17px;
 }
 
@@ -62,9 +66,17 @@
 
 /* logo */
 #logo{
-    margin-right: 200px;
     margin-left: 200px;
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 0px;;
+    
+}
+
+/* style the project name */
+#project{
+    margin-right: 100px;
+    font-family:inherit;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 20px;
     
 }
