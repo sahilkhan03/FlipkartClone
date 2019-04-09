@@ -39,5 +39,12 @@ router.get('/show/:id' , (req,res,next) => {
 });
 
 
+//Show edit form to update details of a product
+router.get('/show/:id/edit' , (req,res) => {
+
+    res.status(200).render('updateProductDetails');
+
+});
+
 module.exports = router;
 
