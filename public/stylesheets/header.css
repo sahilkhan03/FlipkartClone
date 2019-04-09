@@ -5,10 +5,11 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #ff9933;
+  background-color: steelblue;
   overflow: hidden;
     max-height: 53px;
     margin-top: 0px;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -26,8 +27,8 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color:#f4fc95;
-  color:#dc143c;
+  background-color:turquoise;
+  color:steelblue;
     text-decoration: none;
 }
 
@@ -46,8 +47,8 @@
 .topnav input[type=text] {
   float: left;
   padding: 6px;
-    background-color:#ffff82;
-  border-color: #fffaf0;
+    background-color: turquoise;
+  border-color: teal;
     border-radius: 2rem;
   margin-top: 8px;
  
@@ -60,8 +61,8 @@
 .topnav input[type=text]:focus{
         outline: none;
     border: 3px solid gray;
-    background-color: #f0ffff;
-    color:#dc143c;
+    background-color: turquoise;
+    color:steelblue;
 }
 
 /* logo */
