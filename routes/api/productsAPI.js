@@ -60,6 +60,17 @@ router.put('/api/products/:id' , (req,res,next) => {
 
 });
 
-
+//Delete specific product from database
+router.delete('api/products/:id' , (req,res,next) => {
+   Products.findByIdAndRemove( req.params.id )
+       .then( (product) => {
+           console.log(product);
+           res.status(200).redirect('/');
+       })
+       .catch( (error) => {
+           console.log(error);
+           next(error);
+       })
+});
 
 module.exports = router;
