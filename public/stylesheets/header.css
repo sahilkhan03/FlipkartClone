@@ -66,7 +66,7 @@
 
 /* logo */
 #logo{
-    margin-left: 200px;
+    
     margin-bottom: auto;
     margin-top: 0px;;
     
@@ -74,7 +74,7 @@
 
 /* style the project name */
 #project{
-    margin-right: 100px;
+    margin-right: 120px;
     font-family:inherit;
     text-shadow: 4px 4px 4px #aaa;
     font-size: 20px;
