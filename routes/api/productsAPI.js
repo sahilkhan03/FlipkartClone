@@ -45,5 +45,19 @@ router.get('/api/products/:id' , (req,res,next) => {
 
 });
 
+//Update details of specific product
+router.put('/api/products/:id' , (req,res,next) => {
+
+    Products.findByIdAndUpdate( req.params.id , req.body.blog )
+        .then( (product) => {
+           console.log(product);
+           res.status(200).redirect('/');
+        })
+        .catch( (error) => {
+           console.log(error);
+           next(error);
+        });
+
+});
 
 module.exports = router;
