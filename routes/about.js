@@ -4,5 +4,5 @@ let express = require(express),
     router = express.Router();
 
 router.get('/about' , (req,res) => {
-    res.render('about.html');
+    res.sendFile('../../views/about.html');
 }) ;
