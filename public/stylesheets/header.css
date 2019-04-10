@@ -15,7 +15,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: turquoise;
+  color: #40E0D0;
   text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -26,7 +26,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color:turquoise;
+  background-color:#40E0D0;
   color:	#4682B4;
     text-decoration: none;
 }
@@ -59,7 +59,7 @@
             /* focus when selected */
 .topnav input[type=text]:focus{
         outline: none;
-    border: 3px solid gray;
+    border: 3px solid #A9A9A9;
     background-color: #f0ffff;
     color: #000000;
 }
