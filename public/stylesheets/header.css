@@ -7,7 +7,7 @@
 .topnav {
   background-color: 	#4682B4;
   overflow: hidden;
-    max-height: 3.313rem;
+    max-height: 5%;
     margin-top: 0px;
 }
 
@@ -19,7 +19,7 @@
   text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-  padding: 0.875rem 1rem;
+  padding: 0.875rem ;
   text-decoration: none;
   font-size: 1.125rem;
 }
@@ -51,7 +51,7 @@
     border-radius: 2rem;
   margin-top: 0.5rem;
  
-    margin-left: 1.563rem;
+    margin-left: 1rem;
     
   font-size: 1.063rem;
 }
@@ -74,7 +74,7 @@
 
 /* style the project name */
 #project{
-    margin-right: 7.5rem;
+    margin-right: 1.5rem;
     font-family:inherit;
     text-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #aaa;
     font-size: 1.25rem;
