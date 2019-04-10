@@ -5,7 +5,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #ff9933;
+  background-color: 	#4682B4;
   overflow: hidden;
     max-height: 53px;
     margin-top: 0px;
@@ -15,7 +15,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #40E0D0;
   text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -26,8 +26,8 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color:#f4fc95;
-  color:#dc143c;
+  background-color:#40E0D0;
+  color:	#4682B4;
     text-decoration: none;
 }
 
@@ -46,8 +46,8 @@
 .topnav input[type=text] {
   float: left;
   padding: 6px;
-    background-color:#ffff82;
-  border-color: #fffaf0;
+    background-color: #40E0D0;
+  border-color: #008080;
     border-radius: 2rem;
   margin-top: 8px;
  
@@ -59,36 +59,24 @@
             /* focus when selected */
 .topnav input[type=text]:focus{
         outline: none;
-    border: 3px solid gray;
+    border: 3px solid #A9A9A9;
     background-color: #f0ffff;
-    color:#dc143c;
+    color: #000000;
 }
 
-/* logo link */
-#alogo{
+/* logo */
+#logo{
     margin-left: 200px;
     margin-bottom: auto;
-    margin-top: 0px;    
-}
-
-/* image of logo */
-#logo{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-bottom: 2px;
-    border-radius: 0.5rem;
-    height: 40px;
-    width: 50px;
-    vertical-align: middle;
+    margin-top: 0px;;
+    
 }
 
 /* style the project name */
-#project-name{
+#project{
     margin-right: 100px;
     font-family:inherit;
-    font-style: oblique;
     text-shadow: 4px 4px 4px #aaa;
     font-size: 20px;
-    text-align: center;
     
 }
