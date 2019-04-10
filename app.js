@@ -3,6 +3,7 @@
 let express = require('express'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose'),
+    methodOverride = require('method-override'),
     path = require('path'),
     http = require('http'),
     app  =  express();
@@ -12,6 +13,7 @@ mongoose.connect('mongodb://localhost/easeMyCart' , {useNewUrlParser: true});
 app.set('view engine','ejs');
 app.use(express.static('./'));
 app.use(bodyParser.urlencoded({extended : true}));
+app.use(methodOverride('_method'));
 
 //Require all routes here
 let routes = require('./routes');

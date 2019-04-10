@@ -3,6 +3,7 @@
 let express = require('express'),
     Products = require('../../models/Products'),
     Comments = require('../../models/Comments'),
+    methodOverride = require('method-override'),
     router = express.Router();
 
 //Get all Products
