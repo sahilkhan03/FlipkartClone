@@ -67,8 +67,7 @@ background-color:#001730;
 .topnav-links{
     padding:0.125rem;
     border-radius: 2rem;
-border-color: #4AD7D1;
-    border-style:solid;
+    border-color: #4AD7D1;
     margin: auto 1rem;
 }
 .topnav-links:hover{
