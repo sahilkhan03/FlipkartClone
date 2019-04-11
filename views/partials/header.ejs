@@ -20,30 +20,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
                                             <!-- LOGO -->
-    <nav>
-<div class="topnav" id="myTopnav">
-    <div class="container">
-    <a href="../" id="logo"><img src="/public/images/project-logo.jpg" height="35" width="50"></a>
-  <a href="../"><span id="project"> Ease My Cart </span> </a>
-    
-                            <!-- search bar -->
-<input type="text" placeholder="Search Products or Brands"> </div>
-                            <!-- div to show contents on right -->
-    
-    <div id="rt">
-                                        <!-- Login / Signup -->
-        
-  <a href="/views/login"> <i class="fas fa-user-plus"></i> Login</a>
-        
-                                        <!-- Cart -->
-        
-  <a href="/cart"> <i class="fas fa-shopping-cart"></i> Cart </a>
-        
-                                        <!-- About -->
-        
-  <a href="#about"> About </a>
-</div>
-    
-</div>
-    
-    </nav>
+   
+<nav class="nav d-flex  flex-lg-row navbar-expand-lg topnav">
+      <a href="../" id="logo"><img src="/public/images/project-logo.jpg" height="35" width="50"></a>
+      <a href="../" class="="><span id="project" class="d-none d-lg-block" > Ease My Cart </span> </a>
+      <input type="text" placeholder="Search Products or Brands"> 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"><i class="fas fa-sliders-h"></i></span>
+        </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav"> 
+                    <a class="nav-link" href="#"><i class="fas fa-user-plus"></i>Log in </a>
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+                    <a class="nav-link" href="#">About</a>
+           </div>
+</nav>
