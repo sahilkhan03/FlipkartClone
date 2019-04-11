@@ -13,3 +13,10 @@ h1  {
 body{
      background: #f1f3f6;  /* fallback for old browsers */
 }
+.bg-light{
+        background-color: #ffff!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,0,0);
+
+}
