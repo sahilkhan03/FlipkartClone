@@ -19,12 +19,13 @@ background-color:#001730;
   display: block;
   color: #ffff;
   text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
   padding: 1rem 1.7rem ;
   text-decoration: none;
   font-size: 1rem;
   transition: 0.5s;
+    vertical-align: middle;
   
 }
 
