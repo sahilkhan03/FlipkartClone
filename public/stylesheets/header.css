@@ -9,7 +9,7 @@
 .topnav {
 background-color:#001730;
   overflow: hidden;
-    
+    height: 4.3rem;
     margin-top: 0px;
 }
 
@@ -32,7 +32,7 @@ background-color:#001730;
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color:#4AD7D1;
-  color:	#ffff;
+      color:	#ffff;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -46,7 +46,7 @@ background-color:#001730;
 .topnav input[type=text] {
   padding: 0.375rem;
   border-color: #4AD7D1;
-  margin-top: 0.5rem;
+  margin: auto;
     width:110%;
    font-size: 1.063rem;
 }
@@ -60,9 +60,17 @@ background-color:#001730;
                                         /* style the project name */
 #project{
     font-family:inherit;
-    text-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #ffff;
-    font-size: 1.25rem;
-  }
+    font-weight: bold;
+    font-size: 1.2rem ;
+    border-radius: 2rem;
+}
+#project:hover{
+    border-color: #001730;
+    border-radius: 2rem;
+    font-size: 1.3rem ;
+
+    background-color:#4AD7D1;
+}
                                 /* the buttons on right of navbar */
 
 .topnav-links{
@@ -73,6 +81,7 @@ background-color:#001730;
 }
 .topnav-links:hover{
 border-color: #001730;
+    font-size: 1.2rem;
 }
 .navbar-toggler{
     color:#4AD7D1;}
