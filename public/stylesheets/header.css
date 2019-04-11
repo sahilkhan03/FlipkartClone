@@ -47,7 +47,7 @@ background-color:#001730;
   padding: 0.375rem;
   border-color: #4AD7D1;
   margin-top: 0.5rem;
-    
+    width:110%;
    font-size: 1.063rem;
 }
 
@@ -55,8 +55,6 @@ background-color:#001730;
 .topnav input[type=text]:focus{
         outline: none;
     border: 0.1875rem solid #001730;
-    background-color: #4AD7D1;
-    color: #ffff;
 }
 
                                         /* style the project name */
@@ -80,6 +78,7 @@ border-color: #001730;
     color:#4AD7D1;}
 
 .topnav-centered{
+    margin-right: 3%;
     position: relative;
     left: 30%;
 }
