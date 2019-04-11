@@ -7,7 +7,7 @@
 .topnav {
   background-color: 	#4682B4;
   overflow: hidden;
-    max-height: 5%;
+    
     margin-top: 0px;
 }
 
@@ -22,13 +22,17 @@
   padding: 0.875rem ;
   text-decoration: none;
   font-size: 1.125rem;
+  transition: 0.5s;
+  border-radius: 2px;
 }
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color:#40E0D0;
   color:	#4682B4;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -36,11 +40,6 @@
   display: none;
 }
 /* Set the login , cart and about links to the extreme right of nav bar */
-#rt{
-    display: flex;
-    position: absolute;
-    right: 1.25rem;
-}
 
                     /* Search bar */
 .topnav input[type=text] {
