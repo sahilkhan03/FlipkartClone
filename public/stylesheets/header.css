@@ -97,3 +97,10 @@ border-color: #001730;
     flex-flow:nowrap;
     align-items: center;
 }
+
+.navbar-container{
+  width:80%;
+  max-width: 700px!important;
+  padding-right: 0.25rem;
+  padding-left:0.25rem;
+}
