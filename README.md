@@ -13,8 +13,6 @@ An eCommerce website built with node.js, express.js and mongoDB at backend and R
 ### Server Setup
 
 - Clone repository: `git clone https://github.com/sahilkhan03/Flickart.git`
-- Run the following command in the backend and frontend directory to install packages:
-  - `npm install --save`
-- Run the following command in the backend and frontend directory to start server:
-  - `npm start`
+- Run the following command in the backend and frontend directory to install packages: `npm install --save`
+- Run the following command in the backend and frontend directory to start server: `npm start`
 - Open http://localhost:3000/ or http://127.0.0.1:3000/ in browser.
