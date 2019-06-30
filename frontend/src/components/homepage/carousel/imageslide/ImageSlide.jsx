@@ -1,6 +1,12 @@
-import React, { Component } from "react";
-export default class ImageSlide extends Component {
-  render() {
-    return <div className="carousel">imagecomponent</div>;
-  }
-}
+import React from "react";
+
+let ImageSlide = ({ url }) => {
+  const styles = {
+    backgroundImage: `url(${url})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+  };
+  return <div className="carousel-image" style={styles} />;
+};
+
+export default ImageSlide;
