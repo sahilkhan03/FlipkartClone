@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ImageSlide from "./imageslide/ImageSlide";
 import Arrow from "./arrow/Arrow";
+import "./Carousel.css";
 export default class Carousel extends Component {
   constructor(props) {
     super(props);
