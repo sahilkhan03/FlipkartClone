@@ -8,14 +8,14 @@ export default class Carousel extends Component {
     this.state = {
       curIdx: 0,
       imgUrl: [
-        "https://www.91-img.com/pictures/97744-v1-apple-iphone-7-mobile-phone-large-1.jpg",
+        "https://img.purch.com/iphonexs-max-xr-faceoff002-jpg/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9JL0UvODIzNjIyL29yaWdpbmFsL2lwaG9uZVhzLU1heC1YUi1mYWNlb2ZmMDAyLmpwZw==",
         "https://www.91-img.com/pictures/121008-v1-apple-iphone-x-mobile-phone-large-1.jpg"
       ]
     };
     this.previousSlide = this.previousSlide.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
+    setInterval(this.nextSlide, 3000);
   }
-
   previousSlide() {
     let { curIdx, imgUrl } = this.state;
     curIdx = curIdx === 0 ? imgUrl.length - 1 : curIdx - 1;
