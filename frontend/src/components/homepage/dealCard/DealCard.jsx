@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./DealCard.css";
 export default class DealCard extends Component {
   render() {
     return (
