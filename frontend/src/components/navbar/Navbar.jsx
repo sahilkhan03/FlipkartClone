@@ -8,7 +8,7 @@ export default class Navbar extends Component {
 
                               {/* Name of Project (on left side)*/}
         <div className="navbar-brand">
-        <NavLink role="button" className="navbar-item navlinks" exact  to="/"> Flickart    </NavLink>  
+        <NavLink role="button" className="navbar-item navlinks" exact activeStyle={{ color: "orange", backgroundColor:"#001730" }}  to="/"> Flickart    </NavLink>  
         </div>
 
                                         {/* SEARCH BAR*/}
@@ -22,15 +22,15 @@ export default class Navbar extends Component {
         
         <div className="navbar-end">
 
-                  <NavLink role="button" className="navbar-item navlinks" exact to="/cart"> 
+                  <NavLink role="button" className="navbar-item navlinks" exact activeStyle={{ color: "orange", backgroundColor:"#001730" }} to="/cart"> 
                   Cart
                    </NavLink>
 
-                  <NavLink role="button" className="navlinks navbar-item" exact  to="/login"> Login </NavLink>
+                  <NavLink role="button" className="navlinks navbar-item" exact activeStyle={{ color: "orange" ,backgroundColor:"#001730" }}  to="/login"> Login </NavLink>
                   
-                  <NavLink role="button" className="navbar-item navlinks" exact  to="/signup"> Signup </NavLink>
+                  <NavLink role="button" className="navbar-item navlinks" exact activeStyle={{ color: "orange", backgroundColor:"#001730" }}  to="/signup"> Signup </NavLink>
                   
-                  <NavLink role="button" className="navbar-item navlinks" exact  to="/about"> About </NavLink>
+                  <NavLink role="button" className="navbar-item navlinks" exact activeStyle={{ color: "orange" ,backgroundColor:"#001730" }}  to="/about"> About </NavLink>
         
         </div>
       
