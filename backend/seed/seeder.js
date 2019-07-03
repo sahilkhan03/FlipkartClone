@@ -22,27 +22,6 @@ let Products = require('../models/Products'),
          brand: faker.company.companyName() ,
          category: faker.commerce.department()
 
-     }) .then( (product) => {
-         //Creating fake comments
-         for(let j=0; j<3; j++) {
-             Comments.create({
-                 comment: faker.lorem.sentence()
-             }) .then( (comment) => {
-                 //Pushing newly created comment to product
-                 product.comments.push(comment);
-                 product.save()
-                     .then( (com) => console.log(com))
-                     .catch( (err) => console.log(err));
-
-             }) .catch( (error) => {
-                 console.log(error);
-             });
-         }
-         console.log(product);
-
-     }).catch( (error) => {
-         console.log(error);
-     });
-
+     }) 
  }
 

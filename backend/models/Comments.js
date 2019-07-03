@@ -3,7 +3,15 @@
 //Defining Comments Schema
 let mongoose = require('mongoose');
 let commentSchema = new mongoose.Schema({
-    comment: {type: String , required: false}
+    comment: {type: String , required: false},
+ 
+        author:{
+            id:{
+             type:mongoose.Schema.Types.ObjectId,
+             ref:"User"
+            },
+            username:String
+        }
 });
 
 
