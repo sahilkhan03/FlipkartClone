@@ -1,20 +1,34 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 #Search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     align-self: center;
+    padding: 1%;
 }
 
 .navbar {
     background-color: #001730 !important;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .navlinks {
+    text-align: center;
+    align-self: center;
     text-decoration: none;
     color: #4ad7d1;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .navlinks:hover {
     background-color: #001730 !important;
-    color: lightblue !important;
+    color: navajowhite !important;
+}
+
+.center-align {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
 }
