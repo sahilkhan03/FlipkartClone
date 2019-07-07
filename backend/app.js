@@ -33,13 +33,13 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 //Require all routes here
-let routes = require("./routes");
-let about = require("./routes/about");
+// let routes = require("./routes");
+// let about = require("./routes/about");
 let ProductsAPI = require("./routes/api/productsAPI");
 
 //Use all routes here
-app.use(routes);
-app.use(about);
+// app.use(routes);
+// app.use(about);
 app.use(ProductsAPI);
 
 //Listening on port 3000

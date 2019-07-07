@@ -21,7 +21,7 @@ router.get("/api/products/", (req, res, next) => {
 });
 
 //Get Products by Category
-router.get("api/products/category/:category", (req, res, next) => {
+router.get("/api/products/category/:category", (req, res, next) => {
   Products.find({ category: req.params.category })
     .populate("comments")
     .exec()
@@ -75,7 +75,7 @@ router.put("/api/products/:id", (req, res, next) => {
 });
 
 //Delete specific product from database
-router.delete("api/products/:id", (req, res, next) => {
+router.delete("/api/products/:id", (req, res, next) => {
   Products.findByIdAndRemove(req.params.id)
     .then(product => {
       console.log(product);
