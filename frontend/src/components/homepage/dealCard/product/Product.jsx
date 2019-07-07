@@ -3,7 +3,7 @@ let Product = ({ image, price, brand, title }) => (
   <div className="column is-one-fifth ">
     <div className="card-image">
       <figure className="image is-4by3">
-        <img src={image} alt="Product" />
+        <img className="is-rounded" src={image} alt="Product" />
       </figure>
       <p className="title is-5" style={{ textAlign: "center" }}>
         {title}
