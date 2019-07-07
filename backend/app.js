@@ -9,7 +9,6 @@ let express = require("express"),
   User = require("./models/user"),
   passport = require("passport"),
   LocalStrategy = require("passport-local"),
-  methodOverride = require("method-override"),
   app = express();
 
 mongoose.connect("mongodb://localhost/easeMyCart", { useNewUrlParser: true });
@@ -19,7 +18,7 @@ app.set("view engine", "ejs");
 app.use(express.static("./"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
-//express sesson
+//express sessonW
 app.use(
   require("express-session")({
     secret: "secured",

@@ -12,6 +12,7 @@
     "debug": "~2.6.9",
     "ejs": "^2.5.9",
     "express": "^4.16.4",
+    "express-session": "^1.16.2",
     "faker": "^4.1.0",
     "http-errors": "~1.6.2",
     "method-override": "^3.0.0",
