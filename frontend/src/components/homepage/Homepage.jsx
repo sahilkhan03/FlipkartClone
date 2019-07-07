@@ -7,11 +7,11 @@ export default class Homepage extends Component {
       <div className="container">
         <Carousel style={{ width: "100%", height: "100%" }} />
         <br />
-        <DealCard title="Mens Wear" />
+        <DealCard title="Sports" category="Sports" />
         <br />
-        <DealCard title="Mobile Phones" />
+        <DealCard title="Electronics" category="Electronics" />
         <br />
-        <DealCard title="Laptops" />
+        <DealCard title="Toys" category="Toys" />
         <br />
       </div>
     );

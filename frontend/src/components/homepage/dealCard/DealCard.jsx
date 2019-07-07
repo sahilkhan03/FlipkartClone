@@ -10,6 +10,7 @@ export default class DealCard extends Component {
   shuffle(arr) {
     return arr.sort(() => Math.random - 0.5);
   }
+
   render() {
     return (
       <div className="card">
