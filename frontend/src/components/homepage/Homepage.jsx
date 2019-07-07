@@ -9,9 +9,9 @@ export default class Homepage extends Component {
         <br />
         <DealCard title="Mens Wear" />
         <br />
-        <DealCard title="Mens Wear" />
+        <DealCard title="Mobile Phones" />
         <br />
-        <DealCard title="Mens Wear" />
+        <DealCard title="Laptops" />
         <br />
       </div>
     );
