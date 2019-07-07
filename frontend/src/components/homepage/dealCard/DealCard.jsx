@@ -23,7 +23,7 @@ export default class DealCard extends Component {
 
   render() {
     let productSection = this.state.products.map((product, index) => (
-      <Product details={product} key={index} />
+      <Product {...product} key={index} />
     ));
     return (
       <div className="card">
