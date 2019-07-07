@@ -5,6 +5,10 @@ export default class DealCard extends Component {
   constructor(props) {
     super(props);
     this.state = [];
+    this.shuffle = this.shuffle.bind(this);
+  }
+  shuffle(arr) {
+    return arr.sort(() => Math.random - 0.5);
   }
   render() {
     return (

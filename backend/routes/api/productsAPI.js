@@ -20,6 +20,20 @@ router.get("/api/products/", (req, res, next) => {
     });
 });
 
+//Get Products by Category
+router.get("api/products/category/:category", (req, res, next) => {
+  Products.find({ category: req.params.category })
+    .populate("comments")
+    .exec()
+    .then(products => {
+      res.status(200).json(products);
+    })
+    .catch(error => {
+      console.log(error);
+      next(error);
+    });
+});
+
 //Add new product to database
 router.post("/api/products", (req, res, next) => {
   Products.create(req.body.blog)

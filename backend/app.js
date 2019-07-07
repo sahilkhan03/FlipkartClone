@@ -43,6 +43,4 @@ app.use(about);
 app.use(ProductsAPI);
 
 //Listening on port 3000
-app.listen(8080, () => {
-  console.log("Backend Server started on port 8080");
-});
+app.listen(8080, () => console.log("Backend Server started on port 8080"));
